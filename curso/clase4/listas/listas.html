@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    
+    <div id="app">
+        <li v-for="(poliza, index) in polizas">
+            {{ poliza.codigo }} - {{ index }} - {{ poliza.patente }}
+        </li>
+        <button @click="ordenar">Ordenar</button>
+        <p>Codigo <input v-model="poliza.codigo">
+        Patente <input v-model="poliza.patente">
+        <button @click="agregarPoliza">Agregar poliza</button>
+        </p>
+    </div>    
+
+    <script src="listas.js"></script>
+</body>
+</html>

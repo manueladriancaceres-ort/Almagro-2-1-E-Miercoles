@@ -8,9 +8,23 @@
 </head>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
+   
+    <div id="app">
+        <p v-bind:style="color" >Algun texto</p>
+        <button @click="cambioColor">Color A rojo</button>
+        {{ mensaje }}
+        <p>Numero {{numero}}</p>
+        {{ numero + 100 }}
+        <button @click="incrementar">Incrementar</button>
+        <p> {{ ok ? 'SI' : 'NO' }} </p> 
+        <p> {{ mensaje.split('').reverse().join('') }}  </p>
+        <p v-if="ver">Ahora me ven</p>
+        <p v-show="ver">Ahora me ven</p>
+        <button @click="ocultarTexto">Ocultar Texto</button>
 
-    
-    <div id="app">{{ mensaje }}</div>
+    </div>
+
+
     <script src="index.js"></script>
 </body>
 </html>
