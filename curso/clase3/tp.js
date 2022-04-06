@@ -12,7 +12,7 @@ const proceso = {
         {numero:2, numeroFactura: 4, pagado: 1000}
     ],
     facturasOrdenasPorImporte() {
-        
+
     },
     facturasPorCliente(cliente) {
         const rta = [];
@@ -28,6 +28,5 @@ const proceso = {
     listaFaturasImpagas() {
 
     }
-
-
 }
+
