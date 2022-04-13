@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    
+    <div id="app">
+        <h3 v-bind:style="estilo">Consultora Itnew</h3>
+        <button @click="cambioColor">Cambiar color titulo</button>
+
+        <p>Codigo de factura: {{codigoFactura}}</p>
+        <li v-for="(item, index) in items">
+           CODIGO {{ item.codigo }} -  DESCRIPCION: {{ item.descripcion }} 
+        </li>
+        <button @click="ordenar">Ordenar</button>
+        <p>
+        <label for="Codigo">Codigo</label>
+        <input v-model="item.codigo">
+        </p>
+        <p>
+        <label for="Descripcion">Descripcion</label>
+        <input v-model="item.descripcion">
+        </p>
+        <button @click="agregarItem">Agregar Item</button>
+        <button @click="imprimirFactura">Imprimir factura</button>
+    </div>    
+
+    <script src="index.js"></script>
+</body>
+</html>
