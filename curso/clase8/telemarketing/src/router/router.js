@@ -5,6 +5,7 @@ import GestionVenta from '../components/GestionVenta.vue'
 import Usuario from '../components/Usuario.vue'
 import NotFound from '../components/NotFound.vue'
 import CarritoCompras from '../components/CarritoCompras.vue'
+import ConfirmaCompra from '../components/ConfirmaCompra.vue'
 
 const routes = [
     { path: '/', component: Home },
@@ -12,6 +13,7 @@ const routes = [
     { path: '/gestionventa', component: GestionVenta },
     { path: '/usuario/:id', component: Usuario },
     { path: '/carritocompras', component: CarritoCompras },
+    { path: '/confirmacompra', component: ConfirmaCompra },
     { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 

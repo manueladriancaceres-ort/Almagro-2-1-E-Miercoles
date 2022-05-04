@@ -9,8 +9,8 @@ export const useStore = defineStore('main', {
     },
   
     actions: {
-        agregarCompra() {
-            this.listaCompras.push({id:1,desc:"algo"});
+        agregarCompra(obj) {
+            this.listaCompras.push(obj);
         },
     },
 
