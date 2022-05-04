@@ -2,6 +2,7 @@
   <div>
     <h2>Carrito de compras</h2>
     {{ listaCompras }}
+    <button @click="agregar">Agregar Compra</button>
   </div>
 </template>
 
@@ -14,10 +15,14 @@ export default {
     const store = useStore();
     const { listaCompras } = storeToRefs(store)
     return {
-      // you can return the whole store instance to use it in the template
       store, listaCompras
     };
   },
+  methods: {
+    agregar() {
+      this.store.agregarCompra();
+    }
+  }
 };
 </script>
 
