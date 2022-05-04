@@ -7,6 +7,7 @@
       <router-link to="/">Go to Home</router-link> |
       <router-link to="/vendedor">Vendedor</router-link> |
       <router-link to="/gestionventa">Gestion venta</router-link> |
+      <router-link to="/carritocompras">Carrito de compras</router-link> |
     </p>
     <router-view></router-view>
   </div>

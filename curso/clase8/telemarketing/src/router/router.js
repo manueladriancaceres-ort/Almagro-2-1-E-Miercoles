@@ -4,12 +4,14 @@ import Home from '../components/Home.vue'
 import GestionVenta from '../components/GestionVenta.vue'
 import Usuario from '../components/Usuario.vue'
 import NotFound from '../components/NotFound.vue'
+import CarritoCompras from '../components/CarritoCompras.vue'
 
 const routes = [
     { path: '/', component: Home },
     { path: '/vendedor', component: Vendedor },
     { path: '/gestionventa', component: GestionVenta },
     { path: '/usuario/:id', component: Usuario },
+    { path: '/carritocompras', component: CarritoCompras },
     { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 
