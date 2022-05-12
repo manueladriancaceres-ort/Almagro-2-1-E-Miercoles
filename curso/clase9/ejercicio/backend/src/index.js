@@ -26,6 +26,17 @@ app.post('/api/setgetionventa', (req, res) => {
   res.json(req.body);
 })
 
+app.delete('/api/deletegetionventa/:codigo', (req,res) => {
+  req.params.codigo = Number(req.params.codigo)
+  console.log(req.params.codigo);
+  const listaCodigos = lista.map(e => {return e.codigo} )
+  console.log(listaCodigos);
+  const indice = lista.indexOf(req.params.codigo);
+  console.log(indice);
+  lista.splice(indice,1);
+  res.json(req.params)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

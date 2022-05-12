@@ -9,6 +9,7 @@ const apiClient = axios.create({
 })
 
 export default {
+    // break hasta 21:35
     getGestionVentas() {
         return apiClient.get('/api/getlista')
     },
@@ -16,7 +17,7 @@ export default {
         return apiClient.post('/api/setgetionventa', gestionVenta)
     },
     deleteGestionVentas(id) {
-        return apiClient.delete('/api/setgetionventa/' + id)
+        return apiClient.delete('/api/deletegetionventa/' + id)
     }
 
 }
